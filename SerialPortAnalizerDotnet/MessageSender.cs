@@ -48,11 +48,6 @@ public class MessageSender
             return MessageReason.NoReason;
     }
 
-    public void StopMonitoring()
-    {
-        isActive = false;
-    }
-
     private void SendMessage(MessageReason messageReason)
     {
         var message = new MimeMessage();
@@ -70,7 +65,6 @@ MessageReason: {messageReason.ToString()}
 
 -- ArduinoSignalization"
         };
-
         using (var client = new SmtpClient())
         {
             client.Connect("smtp.mail.ru", 465);

@@ -26,6 +26,6 @@ public class SensorsInfo
 
     public override string ToString()
     {
-        return $"Distance: {Distance}, Humidity: {Humidity}, Temperature: {Temperature}, GasValue: {GasSensorValue}";
+        return $"Distance: {Distance}, Humidity: {Humidity}, Temperature: {Temperature}, GasValue: {GasSensorValue} ----- CurrentTime: {DateTime.Now}";
     }
 }
